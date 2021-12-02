@@ -109,7 +109,7 @@ function reinit(){
 }
 
 function changeImage(nbError){
-    document.getElementById("image").querySelector("img").src = "/img/pendu_" + nbError + ".png";
+    document.getElementById("image").querySelector("img").src = "img/pendu_" + nbError + ".png";
     document.getElementById("image").querySelector("img").alt = nbError;
 }
 
