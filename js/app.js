@@ -38,7 +38,12 @@ let words = [
     "ragnar",
     "eivor",
     "dutch",
-    "lucifer"
+    "lucifer",
+    "loup",
+    "cyberpunk",
+    "sage",
+    "mage",
+    "sigurd"
 ]
 
 let alphaB = "";
@@ -142,6 +147,7 @@ function testLetter(letter){
                 for (let i = 0; i < find.length; i++) {
 
                     if (find.indexOf(letter) === -1) {
+
                     }
                     else {
                         placeLetter(find.indexOf(letter), letter);
