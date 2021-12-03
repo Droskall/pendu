@@ -52,7 +52,6 @@ let buttonReset = document.getElementById("text").getElementsByTagName("button")
 let findLetterEmpty;
 init();
 
-
 document.addEventListener("click" , function (e){
     switch (e.target){
         case buttonValid :
@@ -77,7 +76,7 @@ document.addEventListener("keypress" , function (e){
 });
 
 function randomWord(){
-    return words[Math.floor(Math.random()*words.length)];
+    return words[Math.floor(Math.random() * words.length)];
 }
 
 function init(){
@@ -93,7 +92,7 @@ function init(){
     findCopy = find;
     for (let i = 0 ; i < find.length ; i++){
         newDiv = document.createElement("div");
-        newDiv.style.width = Math.floor(100/ find.length)-0.1+"%";
+        newDiv.style.width = Math.floor(100/ find.length)-0.1 + "%";
         word.append(newDiv);
     }
     wordDiv = document.getElementById("word").getElementsByTagName("div");
@@ -102,7 +101,7 @@ function init(){
 }
 
 function reinit(){
-    for (let i = wordDiv.length-1 ; i >=0 ; i--){
+    for (let i = wordDiv.length-1 ; i >= 0 ; i--){
         wordDiv[i].remove();
     }
     init();
@@ -133,12 +132,10 @@ function testLetter(letter){
                     changeImage(error);
                     buttonValid.hidden = true;
                 }
-
                 else {
                     error++;
                     changeImage(error);
                 }
-
             }
 
             else {
